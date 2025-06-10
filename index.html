@@ -8,44 +8,39 @@
     </head>
 
    <body>
-    <div class="menu-bar"
-  <header >
-    <!-- Μενού, τίτλος κλπ -->
+   
     
-     <a href = "website1/index.html"><img src="images/button_home.png"/></a>
-     <a href = "website1/aboutus.html"><img src="images/button_page1.png"/></a>
-     <a href = "website1/categories.html"><img src ="images/button_categories-adults.png"/></a>
-     <a href = "website1/kidscategories.html"><img src="images/button_categories-kids.png"/></a>
-     <a href = "website1/blog.html"><img src="images/button_blog.png"/></a>
-     <a href = "website1/profile.html"><img src="images/button_my-profile.png"/></a>
-     <a href = "website1/contactus.html"><img src="images/button_contact-us.png"/></a>
-     <a href = "website1/terms.html"><img src="images/button_term-of-use.png"/></a>
-     <a href = "website1/loginandout.html"><img src="images/button_login-logout.png"/></a>
-     <a href = "website1/register.html"><img src="images/button_restister.png"/></a>
+  <header class="menu-bar">
+    <!-- Μενού, τίτλος κλπ -->
+      
+    <img src="website1/images/logo2-Photoroom.png" alt ="BookMania">  
+       
+   
+     <a href = "website1/index.html">Home</a>
+     <a href = "website1/aboutus.html">About Us</a>
 
+    
+     <a href = "website1/categories.html" class="dropdown">Book Categories</a>
+     <a href = "website1/kidscategories.html"class="dropdown">Kid's Book Categories</a>
+  
+
+     <a href = "website1/blog.html">Blog</a>
+     <a href = "website1/profile.html">Profile</a>
+     <a href = "website1/merch.html">Shop</a>
+    
+     
+     <a href = "website1/loginandout.html" style="text-align: right;">Login/Logout</a>
+     <a href = "website1/register.html" style ="text-align: right;">Register</a>
+    
   </header>
-</div>
+
   <main>
-    <!-- Εδώ το κυρίως περιεχόμενο -->
-
-<h1> Καλωσήρθες στο BookMania!</h1>
-
-    <p>
-    Αν αγαπάς τα βιβλία, είσαι στο σωστό μέρος.
-
-Το BookMania είναι η online κοινότητα για όλους εμάς που νιώθουμε πως ένα καλό βιβλίο δεν διαβάζεται απλώς — μας συντροφεύει, μας ταξιδεύει, μας αλλάζει.<br>
-Εδώ μπορείς να ανταλλάξεις, να πουλήσεις ή να ανακαλύψεις βιβλία που κάποιος άλλος αγαπούσε πριν από σένα — κι έτσι να γεμίσεις τη βιβλιοθήκη σου με νέες ιστορίες, χωρίς να αδειάσεις το πορτοφόλι σου. <br>
-
-Αλλά δεν μένουμε μόνο στα βιβλία.<br>
-Το BookMania είναι και ένας χώρος γνωριμίας, συζήτησης και φιλίας. Συνάντησε ανθρώπους που λατρεύουν τη μυρωδιά του χαρτιού όσο κι εσύ, μοιράσου προτάσεις, οργανώστε ανταλλαγές ή απλώς μιλήστε για ό,τι σας ενθουσίασε στην τελευταία σας ανάγνωση.<br>
- Εδώ δεν πετάμε ποτέ ένα βιβλίο. Το δίνουμε μια δεύτερη ζωή.<br>
-
-Καλώς όρισες στην παρέα μας. Ξεφύλλισε, ανακάλυψε, αντάλλαξε.<br>
-Η ιστορία σου σε περιμένει...<br>
-</p>
+   
   </main>
 
-  <footer>
+
+  <footer class="footer">
+    <p>© 2023 BookMania. All rights reserved.</p> 
     <!-- Επικοινωνία, όροι χρήσης, κλπ -->
 
     <p>
@@ -55,6 +50,24 @@
         Διεύθυνση: Οδός Βιβλίου 123, Αθήνα, Ελλάδα <br>
     
  </p>
+   <a href = "website1/contactus.html">Contact Us</a>
+   <a href = "website1/terms.html">Terms Of Use</a>
+
+ <form>
+  FirstName<br>
+  <input type="text" placeholder="Το όνομά σας" name="name" required><br>
+  LastName<br>
+  <input type="text" placeholder="Το επίθετό σας" name="surname" required><br>
+  Mobile Number<br>
+  <input type="text" placeholder="Το τηλέφωνό σας" name="phone" required><br>
+    Email<br>
+  <input type="email" placeholder="Το email σας" name="email" required><br>
+    Message<br>
+  <input type="text" placeholder="Το μήνυμά σας" name="message" required><br>
+    <br>
+  <button type="submit">Αποστολή</button><br>
+
+ </form>
   </footer>
 </body>
         
