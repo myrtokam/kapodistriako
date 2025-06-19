@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <title>Bookmania</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/login-logout.css">
+  <iframe src="header.html" width="100%" frameborder="0" height="100%"></iframe>
+ </head>
+
+<body>
+
+  <aside class="ads-left">
+    <img src="image(1).jpg" alt="Διαφήμιση αριστερά">
+  </aside>
+
+  <main id="content-area">
+<form action="login.php" method="post">
+    <h2>Σύνδεση Χρήστη</h2>
+    <label for="username">Όνομα Χρήστη:</label>
+    <input type="text" id="username" name="username" required>
+    
+    <label for="password">Κωδικός:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <button type="submit"onclick='doSomething()'>Σύνδεση</button>
+
+    <form action="register.php" method="post">
+    <h2>Εγγραφή Χρήστη</h2>
+    <label for="username">Όνομα Χρήστη:</label>
+    <input type="text" id="username" name="username" required>
+
+    <label for="E-mail">E-mail:</label>
+    <input type="email" id="E-mail" name="E-mail" required>
+    
+    <label for="password">Κωδικός:</label>
+    <input type="password" id="password" name="password" required>
+    
+    <label for="passwordCheck"> Επιβεβαίωση Κωδικού:</label>
+    <input type="password" id="passwordCheck" name="passwordCheck" required>
+
+    <label for="FirstName">Όνομα:</label>
+    <input type="text" id="FirstName" name="FirstName" required>
+
+    <label for="LasttName">Επίθετο:</label>
+    <input type="text" id="LasttName" name="LasttName" required>
+
+    <label for="PhoneNumber">Τηλέφωνο:</label>
+    <input type="number" id="PhoneNumber" name="PhoneNumber" required>
+
+    <label for="<address>
+    <address id="address" name="address" placeholder="Εισάγετε τη διεύθυνσή σας, π.χ. Οδός, Πόλη, Τ.Κ.
+    </address>">Επίθετο:</label>
+    <input type="text" id="Address" name="address" required>
+
+    <button type="submit" onclick='doSomething()'>Εγγραφή</button>
+
+<script>
+function doSomething() {
+    alert("Η ενέργεια ολοκληρώθηκε με επιτυχία!");
+}
+
+</script>
+
+
+  </main>
+
+  <aside class="ads-right">
+<img src="image(4).jpg" alt="Διαφήμιση δεξιά">
+  </aside>
+
+ <iframe src="footer.html"width="100%" frameborder="0" height="100%"></iframe>
+</body>
+
+</html>
