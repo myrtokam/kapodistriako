@@ -4,20 +4,136 @@
   <meta charset="UTF-8">
   <title>Bookmania</title>
   <link rel="stylesheet" href="CSS/style.css">
-  <iframe src="header.html" width="100%" frameborder="0" height="100%"></iframe>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
  </head>
 
 <body>
+ <header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Book Mania</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBookmania" aria-controls="navbarBookmania" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <aside class="ads-left">
-      <img src="images/DarkLogo.png" alt="Διαφήμιση αριστερά" width="10%" height="10%" style="float: left;">
+    <div class="collapse navbar-collapse" id="navbarBookmania">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-  </aside>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+
+        <!-- Categories Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Categories</a>
+          <ul class="dropdown-menu">
+            <li><h6 class="dropdown-header">Adults</h6></li>
+            <li><a class="dropdown-item" href="#">Fiction</a></li>
+            <li><a class="dropdown-item" href="#">Mystery / Thriller</a></li>
+            <li><a class="dropdown-item" href="#">Romance</a></li>
+            <li><a class="dropdown-item" href="#">Biographies</a></li>
+            <li><a class="dropdown-item" href="#">Science & Technology</a></li>
+            <li><a class="dropdown-item" href="#">Self‑Help / Psychology</a></li>
+            <li><a class="dropdown-item" href="#">Business / Finance</a></li>
+            <li><a class="dropdown-item" href="#">Poetry</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <li><h6 class="dropdown-header">Kids</h6></li>
+            <li><a class="dropdown-item" href="#">Fairy Tales</a></li>
+            <li><a class="dropdown-item" href="#">Educational</a></li>
+            <li><a class="dropdown-item" href="#">Comics / Graphic Novels</a></li>
+            <li><a class="dropdown-item" href="#">School Textbooks</a></li>
+            <li><a class="dropdown-item" href="#">Young Adult</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <li><h6 class="dropdown-header">General</h6></li>
+            <li><a class="dropdown-item" href="#">Cooking</a></li>
+            <li><a class="dropdown-item" href="#">Travel</a></li>
+            <li><a class="dropdown-item" href="#">Art / Photography</a></li>
+            <li><a class="dropdown-item" href="#">Foreign Language</a></li>
+            <li><a class="dropdown-item" href="#">Anthologies / Collections</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <li><h6 class="dropdown-header">Academics / Textbooks</h6></li>
+            <li><a class="dropdown-item" href="#">University Textbooks</a></li>
+            <li><a class="dropdown-item" href="#">Exam Preparation</a></li>
+            <li><a class="dropdown-item" href="#">STEM</a></li>
+            <li><a class="dropdown-item" href="#">Computer Science</a></li>
+            <li><a class="dropdown-item" href="#">Humanities / Philosophy</a></li>
+
+            <li><hr class="dropdown-divider"></li>
+
+            <li><h6 class="dropdown-header">Other / Miscellaneous</h6></li>
+            <li><a class="dropdown-item" href="#">Rare & Collectibles</a></li>
+            <li><a class="dropdown-item" href="#">Uncategorized</a></li>
+            <li><a class="dropdown-item" href="#">Donated Books</a></li>
+          </ul>
+        </li>
+
+        <!-- Profile Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Profile</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile Management</a></li>
+            <li><a class="dropdown-item" href="#">Book Detail</a></li>
+            <li><a class="dropdown-item" href="#">Messages</a></li>
+            <li><a class="dropdown-item" href="#">Terms & Privacy</a></li>
+          </ul>
+        </li>
+
+        <!-- Book Management Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Book Management</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Upload Book</a></li>
+            <li><a class="dropdown-item" href="#">Browse Books</a></li>
+            <li><a class="dropdown-item" href="#">Book Detail</a></li>
+          </ul>
+        </li>
+
+        <!-- Merch Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Merch</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Book Journals</a></li>
+            <li><a class="dropdown-item" href="#">Bookmarks</a></li>
+            <li><a class="dropdown-item" href="#">Book Tote Bags</a></li>
+            <li><a class="dropdown-item" href="#">Stickers</a></li>
+            <li><a class="dropdown-item" href="#">Mugs & Tumblers</a></li>
+            <li><a class="dropdown-item" href="#">Reading Candles</a></li>
+          </ul>
+        </li>
+
+        <!-- Register/Login -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Register / Login</a>
+        </li>
+      </ul>
+
+      <!-- Search form -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
   <main class="content-area" >
- 
-  <div class ="grid-container"
-    <div class="main-article">
+       <div class="container-big">
+      
       <h2>Το Bookmania είναι κάτι πολύ περισσότερο από ένα marketplace βιβλίων</h2>
     <p>
       Το Bookmania είναι ένα οικοσύστημα για όσους αγαπούν το διάβασμα — κι αυτό δεν περιορίζεται μόνο στην ανταλλαγή ή πώληση βιβλίων.
@@ -29,109 +145,56 @@
       Το Bookmania είναι το μέρος όπου το χαρτί ξαναβρίσκει ανθρώπους.
       <strong>📬 Ξεκίνα σήμερα — με ένα μόνο βιβλίο.</strong>
     </p>
-    
-    </div>
+      </div>
    
-    <div class="article">
-   
-       <h3>Αντάλλαξε βιβλία με τον τρόπο που εσύ επιλέγεις</h3>
-    <p>
-      Δεν επιβάλλουμε κανόνες. Θες να στείλεις το βιβλίο με courier, με ΕΛΤΑ ή να το παραδώσεις από κοντά; Εσύ αποφασίζεις.
-      Το Bookmania είναι η πλατφόρμα που σέβεται την ελευθερία σου.
-    </p>
-  </div>
-
-  <div class="article">
-    <h3>Merch που αγαπάς όσο τα βιβλία σου</h3>
-    <p>
-      Βιβλιοθήκες δεν είναι μόνο οι σελίδες. Είναι και τα αξεσουάρ σου! Θήκες, σελιδοδείκτες, δώρα — γιατί κάθε ανάγνωση αξίζει λίγη πολυτέλεια.
-    </p>
-  </div>
-
-  <div class="article">
-    <h3>Βρες τους δικούς σου ανθρώπους μέσα από τα βιβλία</h3>
-    <p>
-      Μέσα από λέσχες ανάγνωσης, συναντήσεις και κοινά ενδιαφέροντα, το Bookmania σου δίνει την ευκαιρία να γνωρίσεις ανθρώπους που σκέφτονται όπως εσύ.
-      Το βιβλίο ενώνει. Και μερικές φορές, αλλάζει ζωές.
-    </p>
-  </div>
-
-  <div class="article">
-     <h3>Αθήνα διαβάζει – εσύ;</h3>
-    <p>
-      Η πόλη έχει ψυχή — κι αυτή εκφράζεται και μέσα από τις λέξεις. Αντάλλαξε ή πούλησε βιβλία στη γειτονιά σου και γίνε μέρος μιας πολιτιστικής αλλαγής που ξεκινά απ’ το ράφι.
-    </p>
-    </div>
-   
-    <div class="article">
-<h3>Ένα βιβλίο, δύο ιστορίες: η δική σου και η επόμενη</h3>
-  <p>
-    Το κάθε βιβλίο κουβαλά μέσα του κάτι από εσένα: σημειώσεις, στιγμές, σκέψεις.  
-    Όταν το δίνεις, δεν το αποχωρίζεσαι — το αφήνεις να συνεχίσει.  
-    Στο Bookmania, η ανταλλαγή δεν είναι απλώς μεταφορά αντικειμένων. Είναι συνέχεια.  
-    Είναι ένας αόρατος διάλογος ανάμεσα σε αναγνώστες που δεν γνωρίζονται, αλλά αγαπούν με τον ίδιο τρόπο.
-  </p>
-
-    </div>
-
-    <div class="article">
-
-    <h3>Δεν είσαι μόνος όταν διαβάζεις</h3>
-  <p>
-    Μπορεί το διάβασμα να μοιάζει μοναχική εμπειρία, αλλά στην πραγματικότητα χτίζει γέφυρες.  
-    Μέσα από το Bookmania, το βιβλίο γίνεται αφορμή για επαφή — με ιδέες, με ιστορίες, με άλλους ανθρώπους.  
-    Μοιράσου το βιβλίο που σε άγγιξε, άφησε σχόλιο, μπες σε μια παρέα ανάγνωσης ή βοήθησε έναν νέο αναγνώστη να ξεκινήσει.  
-    Γιατί κάθε ιστορία αξίζει να ακουστεί. Και εσύ δεν είσαι ποτέ πραγματικά μόνος, όταν υπάρχει κάποιος που διαβάζει μαζί σου.
-  </p>
-
-    </div>
-
-    <div class="article">
-
-   <h3>Η κοινότητα που διαβάζει μαζί, μένει μαζί</h3>
-  <p>
-    Στο Bookmania δεν είσαι απλώς χρήστης. Είσαι μέλος μιας κοινότητας που μεγαλώνει μέρα με τη μέρα.  
-    Οι συναντήσεις, οι λέσχες, οι ανταλλαγές, τα σχόλια κάτω από ένα εξώφυλλο — όλα αυτά δημιουργούν δεσμούς.  
-    Δεν έχει σημασία τι διαβάζεις. Σημασία έχει ότι διαβάζεις μαζί μας.
-  </p>
-
-    </div>
-
-    <div class="article">
- <h3>Φτιάξε τη δική σου μικρή βιβλιοθήκη μέσα στο Bookmania</h3>
-  <p>
-    Θες να ανεβάσεις όλα σου τα βιβλία; Ή απλώς δύο αγαπημένα που θες να κυκλοφορήσουν ξανά;  
-    Στο Bookmania μπορείς να χτίσεις το προφίλ σου σαν μια προσωπική, online βιβλιοθήκη — με εξώφυλλα, περιγραφές και δικές σου σημειώσεις.  
-    Είναι δικό σου. Χωρίς διαφήμιση. Χωρίς πίεση. Χωρίς πλατφόρμες που σε "αναγκάζουν" να πουλήσεις.  
-    Είναι ο δικός σου χώρος. Και κάθε τίτλος έχει σημασία.
-  </p>
-
-    </div>
-
-    <div class="article">
- <h3>Όλοι έχουμε ένα βιβλίο που αξίζει να διαβαστεί ξανά</h3>
-  <p>
-    Εκείνο που σε σημάδεψε. Εκείνο που διάβασες διακοπές. Εκείνο που σου χάρισε ένας παππούς, μια φίλη ή ένας έρωτας.  
-    Το Bookmania είναι εδώ για να δώσεις σε αυτό το βιβλίο νέα πνοή.  
-    Ίσως σε κάποιον άλλον να δώσει έμπνευση. Ίσως παρηγοριά. Ίσως απλώς ένα όμορφο απόγευμα.  
-    Και όταν το κάνεις… κάτι αλλάζει και μέσα σου.
-  </p>
-
-    </div>
+<div class="my-container">
+<div class="article">
+<h3>Γιατί να ανταλλάξεις βιβλία αντί να αγοράσεις καινούρια;</h3>
+<p>
+Στην εποχή της υπερκατανάλωσης, η ανταλλαγή βιβλίων αποτελεί έναν έξυπνο και βιώσιμο τρόπο για να εμπλουτίσεις τη βιβλιοθήκη σου χωρίς περιττά έξοδα. Με το Book Mania, μπορείς να βρεις σπάνιους τίτλους, να γνωρίσεις ανθρώπους με κοινά αναγνωστικά ενδιαφέροντα και να προσφέρεις νέα ζωή στα βιβλία που έχεις διαβάσει. Είναι μια συνειδητή επιλογή – για εσένα, το περιβάλλον και την κοινότητα.
+</p>
+</div>
+<div class="article">
+<h3>Τα οφέλη της ανάγνωσης σε κάθε ηλικία</h3>
+<p>
+Η ανάγνωση δεν είναι μόνο απόλαυση – είναι και πηγή ενδυνάμωσης του εγκεφάλου, της φαντασίας και της συγκέντρωσης. Στα παιδιά, ενισχύει τη γλωσσική ανάπτυξη. Στους ενήλικες, μειώνει το άγχος και βελτιώνει την κριτική σκέψη. Στους μεγαλύτερους, βοηθά στη μνήμη και στη συναισθηματική σταθερότητα. Το Book Mania σου δίνει τη δυνατότητα να βρεις το κατάλληλο βιβλίο για κάθε φάση της ζωής σου – είτε για να μάθεις, είτε για να χαλαρώσεις.
+</p>
+</div>
+<div class="article">
+<h3>Παιδικά βιβλία που αξίζει να διαβάσουν και οι μεγάλοι</h3>
+<p>
+Τα παιδικά βιβλία δεν είναι μόνο για παιδιά. Ιστορίες όπως ο «Μικρός Πρίγκιπας», ο «Χάρι Πότερ» ή το «Όταν σκοτώνουν τα κοτσύφια» κρύβουν βαθιά μηνύματα για τη φιλία, την αγάπη, την απώλεια και τη δύναμη της φαντασίας. Στο Book Mania θα βρεις κατηγορίες ειδικά αφιερωμένες σε διαχρονικά παιδικά αναγνώσματα που μπορούν να εμπνεύσουν κάθε ηλικία. Δοκίμασε να ξαναδιαβάσεις ένα αγαπημένο παιδικό βιβλίο με νέα μάτια.
+</p>
+</div>
+</div>
+ <div class="my-container">
+<div class="article">
+<h3>Παιδικά βιβλία που αξίζει να διαβάσουν και οι μεγάλοι</h3>
+<p>
+Τα παιδικά βιβλία δεν είναι μόνο για παιδιά. Ιστορίες όπως ο «Μικρός Πρίγκιπας», ο «Χάρι Πότερ» ή το «Όταν σκοτώνουν τα κοτσύφια» κρύβουν βαθιά μηνύματα για τη φιλία, την αγάπη, την απώλεια και τη δύναμη της φαντασίας. Στο Book Mania θα βρεις κατηγορίες ειδικά αφιερωμένες σε διαχρονικά παιδικά αναγνώσματα που μπορούν να εμπνεύσουν κάθε ηλικία. Δοκίμασε να ξαναδιαβάσεις ένα αγαπημένο παιδικό βιβλίο με νέα μάτια.
+</p>
+</div>
+<div class="article">
+<h3>Βιβλία δεύτερης ευκαιρίας: μικροί θησαυροί με ιστορία</h3>
+<p>
+Κάθε μεταχειρισμένο βιβλίο έχει τη δική του διαδρομή. Ίσως να συνοδευόταν από μια αφιέρωση, ίσως να έχει σημειώσεις στα περιθώρια, ή ίσως να ήταν το αγαπημένο ανάγνωσμα κάποιου άγνωστου αναγνώστη. Στο Book Mania πιστεύουμε πως τα βιβλία αυτά δεν είναι λιγότερο πολύτιμα – το αντίθετο. Δώσε τους μια δεύτερη ευκαιρία και άφησέ τα να συνεχίσουν το ταξίδι τους στα χέρια ενός νέου αναγνώστη.
+</p>
+</div>
+<div class="article">
+<h3>Πώς να ανεβάσεις σωστά ένα βιβλίο για ανταλλαγή ή πώληση</h3>
+<p>
+Για να έχεις καλύτερες πιθανότητες ανταλλαγής ή πώλησης, φρόντισε να ανεβάσεις καθαρές φωτογραφίες του εξωφύλλου και της ράχης, να γράψεις μια σύντομη περιγραφή (κατάσταση, είδος, εκδότης) και να επιλέξεις σωστά την κατηγορία. Όσο πιο αναλυτικά περιγράφεις το βιβλίο, τόσο πιο αξιόπιστο προφίλ παρουσιάζεις. Και μην ξεχνάς: μπορείς να δηλώσεις αν ενδιαφέρεσαι για ανταλλαγή ή μόνο για πώληση.
+</p>
+</div>
+</div>   
   
-
-  </main>
-
-
-
-  <aside class="ads-right">
-
-    <img src="images/DarkLogo.png" alt="Διαφήμιση δεξιά" width="10%" height="10%"style="float: right;> 
-
-  </aside>
-
-  
- <iframe src="footer.html"width="100%" frameborder="0" height="100%"></iframe>
+</main>
 </body>
 
 </html>
+
+
+<!-- 
+<iframe src="footer.html"width="100%" frameborder="0" height="100%"></iframe>
+<iframe src="header.html"width="100%" height="100%" frameborder="0" ></iframe
+-->
